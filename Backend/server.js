@@ -2,12 +2,15 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const port = 3000   
+const UserRoutes = require('./routes/userRoute')
+   
 
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors(corsOptions))
+
+app.use('/', UserRoutes)
 
 var corsOptions = {
     origin: "http://localhost:8081"
@@ -15,7 +18,7 @@ var corsOptions = {
 
 
   // simple route
-app.get("/", (req, res) => {
+  app.get("/", (req, res) => {
     res.json({ message: "Welcome to bezkoder application." });
   });
   
