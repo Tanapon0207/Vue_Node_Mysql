@@ -1,7 +1,15 @@
 <template>
   <header>
+
+    <ul class="head-nav">
+      <li> Ray@company.com </li>
+      <li> 123-456-7890 </li>
+    </ul>
     <nav>
+
+
       <div class="container">
+
         <div class="nav-con">
           <div class="logo">
             <a href="">Ray</a>
@@ -13,8 +21,8 @@
           </ul>
 
 
-          <div class="btn">
-            <router-link to="/login">Login</router-link>
+          <div class="btn-login">
+            <router-link to="/login"><p>Login</p></router-link>
           </div>
         </div>
       </div>
@@ -23,16 +31,26 @@
 </template>
 
 <style scoped>
-
 .logo a {
   font-size: 1.8rem;
-  color: #fff; /* ใช้สีขาวเพื่อความโดดเด่น */
-  text-decoration: none; /* ลบเส้นขีดใต้ */
+  color: #fff;
+  /* ใช้สีขาวเพื่อความโดดเด่น */
+  text-decoration: none;
+  /* ลบเส้นขีดใต้ */
 }
 
 nav {
   background-color: rgb(7, 43, 72);
-  padding: 10px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+  padding: 10px 0;
+  /* เพิ่มระยะห่างด้านบนและล่าง */
+}
+
+.head-nav {
+  max-width: 1140px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  padding: 10px;
 }
 
 .container {
@@ -54,18 +72,28 @@ nav {
 
 .menu li {
   list-style: none;
-  margin-left: 1.5rem; /* เพิ่มระยะห่างระหว่างรายการเมนู */
+  margin-left: 1.5rem;
+  /* เพิ่มระยะห่างระหว่างรายการเมนู */
 }
 
 .menu a {
   text-decoration: none;
   color: white;
-  font-size: 1.1rem; /* ขนาดใหญ่ขึ้นเล็กน้อย */
-  transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+  font-size: 1.1rem;
+  /* ขนาดใหญ่ขึ้นเล็กน้อย */
+  transition: color 0.3s ease;
+  /* เพิ่มเอฟเฟกต์เมื่อ hover */
 }
 
 .menu a:hover {
-  color: #f0a500; /* เปลี่ยนสีเมื่อ hover เป็นสีทอง */
+  color: #f0a500;
+  /* เปลี่ยนสีเมื่อ hover เป็นสีทอง */
+}
+
+.btn-login p{
+  text-decoration: none;
+  color: white;
+  
 }
 
 /* สำหรับหน้าจอขนาดเล็ก */
@@ -88,11 +116,13 @@ nav {
     margin-left: 0;
     padding: 1rem 0;
     width: 100%;
-    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนแปลงเมื่อ hover */
+    transition: background-color 0.3s ease;
+    /* เพิ่มเอฟเฟกต์การเปลี่ยนแปลงเมื่อ hover */
   }
 
   .menu li:hover {
-    background-color: #444; /* เปลี่ยนพื้นหลังเมื่อ hover */
+    background-color: #444;
+    /* เปลี่ยนพื้นหลังเมื่อ hover */
   }
 
   .logo {
