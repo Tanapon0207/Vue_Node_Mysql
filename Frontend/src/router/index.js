@@ -1,17 +1,13 @@
-// import { createRouter, createWebHistory } from 'vue-router';
-// import Login from '../components/Login.vue'; // นำเข้าหน้า Login
+import {createRouter, createWebHashHistory} from 'vue-router';
+import Login from '../components/Login.vue';
 
-// const routes = [
-//   {
-//     path: '/login',
-//     name: 'Login',
-//     component: Login,  // หน้า Login
-//   },
-// ];
+const routes = [
+  {path: '/login',component: Login},
+];
 
-// const router = createRouter({
-//   history: createWebHistory(),
-//   routes,
-// });
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+});
 
-// export default router;
+export default router;

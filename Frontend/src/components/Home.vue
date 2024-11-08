@@ -11,6 +11,11 @@
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
           </ul>
+
+
+          <div class="btn">
+            <router-link to="/login">Login</router-link>
+          </div>
         </div>
       </div>
     </nav>
