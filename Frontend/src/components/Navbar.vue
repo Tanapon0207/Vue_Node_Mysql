@@ -2,8 +2,8 @@
   <header>
 
     <ul class="head-nav">
-      <li> Ray@company.com </li>
-      <li> 123-456-7890 </li>
+      <li><i class="bi bi-envelope-fill"></i> Ray@company.com </li>
+      <li><i class="bi bi-telephone-fill"></i> 123-456-7890 </li>
     </ul>
     <nav>
 
@@ -22,15 +22,27 @@
 
 
           <div class="btn-login">
-            <router-link to="/login"><p>Login</p></router-link>
+            <router-link to="/login">
+              <p>Login</p>
+            </router-link>
           </div>
         </div>
       </div>
     </nav>
   </header>
+
+
+
+
 </template>
 
 <style scoped>
+
+
+
+
+
+
 .logo a {
   font-size: 1.8rem;
   color: #fff;
@@ -48,9 +60,14 @@ nav {
 .head-nav {
   max-width: 1140px;
   margin: 0 auto;
-  list-style: none;
   display: flex;
   padding: 10px;
+
+}
+
+.head-nav li {
+  margin-right: 20px;
+  list-style: none;
 }
 
 .container {
@@ -90,11 +107,61 @@ nav {
   /* เปลี่ยนสีเมื่อ hover เป็นสีทอง */
 }
 
-.btn-login p{
+.btn-login p {
   text-decoration: none;
   color: white;
-  
+
 }
+
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-container {
+  padding-left: 2rem;
+}
+
+.carousel-title {
+  font-size: 2.5rem;
+  color: #3aa27f;
+}
+
+.carousel-description {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #a0c5a8;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: opacity(0.7);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  filter: opacity(1);
+}
+
 
 /* สำหรับหน้าจอขนาดเล็ก */
 @media screen and (max-width: 360px) {
