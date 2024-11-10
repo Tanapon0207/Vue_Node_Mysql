@@ -91,22 +91,37 @@ footer .container {
     padding: 0 15px;
 }
 
-ul li {
+footer ul li {
+    font-size: 1rem;
+    padding: 2px 0;
     list-style: none;
-    padding-left: 0; /* ลบการเยื้องจากทางซ้าย */
-    margin-left: -10px; /* ขยับให้เริ่มต้นจากด้านซ้ายสุด */
+    margin-left: 0; /* ปรับให้ไม่มีการเยื้องจากซ้าย */
+    padding-left: 0; /* ลบการเยื้องจากด้านซ้าย */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.logo-footer h3 {
+footer ul li:hover {
     color: #ff9800;
-    margin: 0; /* ปรับให้ไม่มีระยะห่างจากขอบ */
 }
 
-.logo-footer h3:hover {
-    color: #ffa726; /* เปลี่ยนสีเมื่อ hover */
+
+footer .logo-footer h3
+{
+    margin-left: 0; /* ลบระยะห่างจากซ้าย */
+    color: #ff9800;
 }
 
-.contact-footer {
+footer .head-footer ul {
+    padding-left: 0; /* ปรับ padding-left ให้เป็น 0 เพื่อให้ตรงกับ h3 */
+    margin-left: 0; /* ปรับ margin-left ให้เป็น 0 */
+}
+
+footer .head-footer ul li {
+    padding-left: 0; /* ลบ padding-left */
+}
+
+footer .contact-footer {
     margin-top: 10px; /* เพิ่มระยะห่างด้านบนของ ul */
 }
 
@@ -140,7 +155,6 @@ ul li {
 }
 
 .icon-contact i {
-    margin-right: 15px;
     font-size: 1.5rem;
     color: rgb(202, 202, 202);
     background-color: rgb(7, 43, 72);
@@ -156,7 +170,7 @@ ul li {
 
 .icon-contact i:hover {
     color: black;
-    background-color: #fff;
+    background-color: #e68900;
 }
 
 .send-email input {

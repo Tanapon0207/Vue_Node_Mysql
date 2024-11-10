@@ -35,17 +35,17 @@
                                     </div>
 
                                     <div class="price">
-                                        <h4>$100</h4>
+                                        <p>$100</p>
                                     </div>
 
                                 </div>
-                                <h5 class="card-title">Card title</h5>
+                                <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk
                                     of
                                     the
                                     card's content.</p>
-                                <p>Reviews (24)</p>
+                                <p class="card-text-footer">Reviews (24)</p>
                             </div>
                         </div>
                     </div>
@@ -66,17 +66,17 @@
                                     </div>
 
                                     <div class="price">
-                                        <h4>$100</h4>
+                                        <p>$100</p>
                                     </div>
 
                                 </div>
-                                <h5 class="card-title">Card title</h5>
+                                <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk
                                     of
                                     the
                                     card's content.</p>
-                                <p>Reviews (24)</p>
+                                <p class="card-text-footer">Reviews (24)</p>
                             </div>
                         </div>
                     </div>
@@ -97,17 +97,17 @@
                                     </div>
 
                                     <div class="price">
-                                        <h4>$100</h4>
+                                        <p>$100</p>
                                     </div>
 
                                 </div>
-                                <h5 class="card-title">Card title</h5>
+                                <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk
                                     of
                                     the
                                     card's content.</p>
-                                <p>Reviews (24)</p>
+                                <p class="card-text-footer">Reviews (24)</p>
                             </div>
                         </div>
                     </div>
@@ -130,17 +130,17 @@
                                     </div>
 
                                     <div class="price">
-                                        <h4>$100</h4>
+                                        <p>$100</p>
                                     </div>
 
                                 </div>
-                                <h5 class="card-title">Card title</h5>
+                                <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk
                                     of
                                     the
                                     card's content.</p>
-                                <p>Reviews (24)</p>
+                                <p class="card-text-footer">Reviews (24)</p>
                             </div>
                         </div>
                     </div>
@@ -174,14 +174,58 @@
     text-align: center;
 }
 
+.card {
+    width: 18rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    border-radius: 10px; /* เพิ่มมุมโค้งให้กับ card */
+    transition: all 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+    cursor: pointer; /* เพิ่มการเปลี่ยน cursor เป็นนิ้วชี้ */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+    transform: translateY(-5px); /* เลื่อน card ขึ้นเล็กน้อยเมื่อ hover */
+}
+
+
 .head-card{
-    border: 2px solid red;
+
     display: flex;
     justify-content: space-between;
 }
 
-.star ul li{
+.star ul {
     list-style: none;
-    display:inline;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.star ul li {
+    margin-right: 5px; /* ระยะห่างระหว่างดาว */
+}
+
+.price h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.star i {
+    color: #FFD700; /* สีทองสำหรับดาว */
+    font-size: 1.2rem; /* ขนาดของดาว */
+}
+
+
+
+
+.price h4 {
+    color: rgb(129, 129, 129);
+}
+
+.card-text-footer{
+    color: rgb(129, 129, 129);
 }
 </style>

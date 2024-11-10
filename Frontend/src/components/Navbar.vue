@@ -27,7 +27,7 @@
 
         <div class="nav-con">
           <div class="logo">
-            <p><b>Ray</b></p>
+            <h3>Ray</h3>
           </div>
           <ul class="menu">
             <li><a href="">Home</a></li>
@@ -52,9 +52,9 @@
 </template>
 
 <style scoped>
-.logo p {
+.logo h3{
   font-size: 1.8rem;
-  color: #fff;
+  color: #ff9800;
   /* ใช้สีขาวเพื่อความโดดเด่น */
   text-decoration: none;
   /* ลบเส้นขีดใต้ */
