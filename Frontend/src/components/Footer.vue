@@ -81,25 +81,33 @@
 footer {
     background-color: rgb(7, 43, 72);
     color: rgb(202, 202, 202);
-    width: 100%; /* ความกว้างเต็มจอ */
-    padding: 40px 0; /* เพิ่ม padding ด้านบนและล่าง */
+    width: 100%;
+    padding: 40px 0;
 }
 
 footer .container {
-    max-width: 1140px; /* ควบคุมความกว้างของเนื้อหาภายใน */
-    margin: 0 auto; /* จัดเนื้อหาให้อยู่กลาง */
-    padding: 0 15px; /* เพิ่มระยะห่างขอบซ้ายขวา */
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 ul li {
     list-style: none;
+    padding-left: 0; /* ลบการเยื้องจากทางซ้าย */
+    margin-left: -10px; /* ขยับให้เริ่มต้นจากด้านซ้ายสุด */
 }
 
-.logo-footer h3{
+.logo-footer h3 {
     color: #ff9800;
+    margin: 0; /* ปรับให้ไม่มีระยะห่างจากขอบ */
 }
-.logo-footer h3:hover{
-    color: #ff9800;
+
+.logo-footer h3:hover {
+    color: #ffa726; /* เปลี่ยนสีเมื่อ hover */
+}
+
+.contact-footer {
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบนของ ul */
 }
 
 .contact-me {
@@ -107,16 +115,21 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    flex-wrap: wrap; /* เพื่อให้ responsive เมื่อหน้าจอเล็ก */
 }
 
 .contact-me button {
     padding: 10px 20px;
     background-color: #ff9800;
-    color: rgb(202, 202, 202);
+    color: #fff; /* ปรับให้ปุ่มมีสีขาวเพื่อเน้นข้อความ */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.contact-me button:hover {
+    background-color: #e68900; /* เพิ่มการเปลี่ยนสีเมื่อ hover */
 }
 
 .icon-contact {
@@ -150,12 +163,30 @@ ul li {
     border: none;
     border-radius: 5px;
     width: 250px;
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่าง input กับปุ่ม */
 }
 
 .coppy-right {
-    
     text-align: center;
     padding-top: 20px;
+    color: rgb(150, 150, 150); /* ปรับสีให้จางลงเพื่อให้ดูไม่เด่นเกินไป */
 }
+
+/* Media queries เพื่อปรับแต่งให้ responsive */
+@media (max-width: 768px) {
+    .contact-me {
+        flex-direction: column;
+        gap: 20px; /* เพิ่มระยะห่างเมื่อเป็น column */
+    }
+
+    .send-email input {
+        width: 100%; /* ปรับขนาดให้เต็มเมื่อหน้าจอแคบ */
+    }
+
+    .send-email button {
+        width: 100%; /* ปรับปุ่มให้เต็มขนาดในหน้าจอเล็ก */
+    }
+}
+
 
 </style>
