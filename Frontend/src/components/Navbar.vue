@@ -12,7 +12,7 @@
 
         <div class="nav-con">
           <div class="logo">
-            <a href="">Ray</a>
+            <p><b>Ray</b></p>
           </div>
           <ul class="menu">
             <li><a href="">Home</a></li>
@@ -21,11 +21,11 @@
           </ul>
 
 
-          <div class="btn-login">
-            <router-link to="/login">
-              <p>Login</p>
-            </router-link>
-          </div>
+
+          <router-link to="/login">
+            <button class="btn-login">Login</button>
+          </router-link>
+
         </div>
       </div>
     </nav>
@@ -37,13 +37,7 @@
 </template>
 
 <style scoped>
-
-
-
-
-
-
-.logo a {
+.logo p {
   font-size: 1.8rem;
   color: #fff;
   /* ใช้สีขาวเพื่อความโดดเด่น */
@@ -103,15 +97,73 @@ nav {
 }
 
 .menu a:hover {
-  color: #f0a500;
+  color: #ff9800;
   /* เปลี่ยนสีเมื่อ hover เป็นสีทอง */
 }
 
-.btn-login p {
-  text-decoration: none;
-  color: white;
+
+.btn-login {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 35px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.4s, color 0.4s;
+  overflow: hidden;
 
 }
+
+
+.btn-login::before,
+
+.btn-login::after {
+
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s;
+
+}
+
+
+.btn-login:hover::before,
+
+.btn-login:hover::after {
+
+  opacity: 1;
+  transform: scale(1.1);
+
+
+}
+
+
+
+.btn-login:hover {
+
+  color: #ff9800;
+
+}
+
+
+
+.btn-login:active {
+
+  background-color: #fbd37b;
+  color: #111;
+  transition: background-color 0.2s, color 0.2s;
+
+}
+
+
 
 
 .carousel-container {

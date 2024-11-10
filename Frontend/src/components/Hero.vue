@@ -66,6 +66,9 @@
 </template>
 
 <style scoped>
+.container{
+  padding: auto;
+}
 
 .col-sm-8 img {
   height: 200px;

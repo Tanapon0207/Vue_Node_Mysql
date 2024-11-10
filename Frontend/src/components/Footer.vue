@@ -15,9 +15,9 @@
                     <div class="logo-footer">
                         <h3>Ray Shop</h3>
                         <ul class="contact-footer">
-                            <li>123 Consectetur at ligula 10660</li>
-                            <li> 010-020-0340</li>
-                            <li> info@company.com</li>
+                            <li><i class="bi bi-geo-alt-fill"></i>123 Consectetur at ligula 10660</li>
+                            <li><i class="bi bi-telephone-fill"></i> 010-020-0340</li>
+                            <li><i class="bi bi-envelope-fill"></i> info@company.com</li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                 </ul>
 
                 <div class="send-email">
-                    <input type="text" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address">
                     <button>Subscribe</button>
                 </div>
             </div>
@@ -79,35 +79,57 @@
 
 <style scoped>
 footer {
-    border: 2px solid black;
-    max-width: 1140px;
-    margin: 0 auto;
+    background-color: rgb(7, 43, 72);
+    color: rgb(202, 202, 202);
+    width: 100%; /* ความกว้างเต็มจอ */
+    padding: 40px 0; /* เพิ่ม padding ด้านบนและล่าง */
+}
+
+footer .container {
+    max-width: 1140px; /* ควบคุมความกว้างของเนื้อหาภายใน */
+    margin: 0 auto; /* จัดเนื้อหาให้อยู่กลาง */
+    padding: 0 15px; /* เพิ่มระยะห่างขอบซ้ายขวา */
+}
+
+ul li {
+    list-style: none;
+}
+
+.logo-footer h3{
+    color: #ff9800;
+}
+.logo-footer h3:hover{
+    color: #ff9800;
+}
+
+.contact-me {
     display: flex;
-    padding: 10px;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
-.row {
-    border: 2px solid red;
+.contact-me button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: rgb(202, 202, 202);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 
 .icon-contact {
     display: flex;
     list-style: none;
     padding: 0;
     gap: 10px;
-    /* เพิ่มระยะห่างระหว่างปุ่ม */
-}
-
-.icon-contact li {
-    display: inline-block;
 }
 
 .icon-contact i {
     font-size: 1.5rem;
-    color: white;
-    background-color: #007bff;
+    color: rgb(202, 202, 202);
+    background-color: rgb(7, 43, 72);
     padding: 10px;
     border-radius: 50%;
     display: inline-flex;
@@ -116,7 +138,6 @@ footer {
     width: 40px;
     height: 40px;
     transition: background-color 0.3s ease;
-    /* เอฟเฟกต์เมื่อ hover */
 }
 
 .icon-contact i:hover {
@@ -124,13 +145,17 @@ footer {
     background-color: #fff;
 }
 
-
-.contact-me {
-
-    border: 2px solid green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.send-email input {
     padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
 }
+
+.coppy-right {
+    
+    text-align: center;
+    padding-top: 20px;
+}
+
 </style>
