@@ -113,7 +113,7 @@ nav {
   cursor: pointer;
   position: relative;
   transition: background-color 0.4s, color 0.4s;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 

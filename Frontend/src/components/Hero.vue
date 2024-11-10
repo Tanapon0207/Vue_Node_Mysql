@@ -43,7 +43,7 @@ const carouselItems = [
             <!-- Image -->
             <div class="col-md-8 d-flex justify-content-end">
               <img src="../assets/water bottle.jpg" alt="carousel image" class="img-fluid wider-img"
-                style="height: 500px;">
+                style="height: 500px; margin-top: 50px;">
             </div>
           </div>
         </div>
@@ -58,8 +58,8 @@ const carouselItems = [
               <p>Some representative placeholder content for the third slide of this carousel.</p>
             </div>
             <div class="col-md-8 d-flex justify-content-end">
-              <img src="../assets/water bottle.jpg" alt="carousel image" class="img-fluid wider-img"
-                style="height: 500px;">
+              <img src="../assets/watch.jpg" alt="carousel image" class="img-fluid wider-img"
+                style="height: 500px; margin-top: 50px;">
             </div>
           </div>
         </div>
@@ -73,9 +73,9 @@ const carouselItems = [
               <h1>One more for good measure.</h1>
               <p>Some representative placeholder content for the third slide of this carousel.</p>
             </div>
-            <div class="col-md-8 d-flex justify-content-end">
+            <div class="col-md-8 d-flex justify-content-end ">
               <img src="../assets/water bottle.jpg" alt="carousel image" class="img-fluid wider-img"
-                style="height: 500px;">
+                style="height: 500px; margin-top: 50px;">
             </div>
           </div>
         </div>
@@ -95,13 +95,30 @@ const carouselItems = [
 </template>
 
 <style scoped>
+
+.carousel-inner {
+  background-color: rgb(222, 222, 222);
+}
+
+.carousel-control-prev{
+  color: red;
+
+}
+
+.carousel-control-prev-icon {
+color: red;
+}
+
+.visually-hidden {
+  color: red;
+}
 .row {
   justify-content: space-between;
   align-items: center;
 }
 
 .carousel-item {
-  height: 500px;
+  height: 600px;
 }
 
 .carousel img {
