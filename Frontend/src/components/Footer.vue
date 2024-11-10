@@ -140,6 +140,7 @@ ul li {
 }
 
 .icon-contact i {
+    margin-right: 15px;
     font-size: 1.5rem;
     color: rgb(202, 202, 202);
     background-color: rgb(7, 43, 72);

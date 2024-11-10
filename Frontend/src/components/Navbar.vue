@@ -1,10 +1,25 @@
 <template>
   <header>
 
-    <ul class="head-nav">
-      <li><i class="bi bi-envelope-fill"></i> Ray@company.com </li>
-      <li><i class="bi bi-telephone-fill"></i> 123-456-7890 </li>
-    </ul>
+    <div class="head-nav">
+      <div class="head-nav-left">
+        <ul>
+          <li><i class="bi bi-envelope-fill"></i> Ray@company.com </li>
+          <li><i class="bi bi-telephone-fill"></i> 123-456-7890 </li>
+        </ul>
+
+      </div>
+
+      <div class="head-nav-right">
+        <ul>
+          <li><i class="bi bi-facebook"></i></li>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-twitter"></i></li>
+          <li><i class="bi bi-linkedin"></i></li>
+        </ul>
+
+      </div>
+    </div>
     <nav>
 
 
@@ -55,14 +70,30 @@ nav {
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
-  padding: 10px;
+  padding-top: 5px;
+  justify-content: space-between;
+ 
 
 }
 
-.head-nav li {
-  margin-right: 20px;
-  list-style: none;
+.head-nav-left{
+  & li {
+    margin-right: 10px;
+    list-style: none;
+    display: inline;
+
+  }
 }
+
+.head-nav-right {
+  & li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+  }
+}
+
+
 
 .container {
   max-width: 1140px;
